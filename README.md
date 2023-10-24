@@ -40,10 +40,10 @@ To use this Bloom Filter library in your Golang project, follow these steps:
 
 1. Make sure you have Python installed on your system. If not, you can download it from [the official Python website](https://www.python.org/downloads/).
 
-2. Make sure to install the PyBloom library if you haven't already using pip:
+2. Make sure to install the PyBloom library if you haven't already using git clone:
 
    ```shell
-   pip install PyBloom
+   git clone https://github.com/Diegomangasco/PyBloom.git
    ```
 
 ## Usage
