@@ -7,7 +7,7 @@ This document provides detailed information about the API of the `PyBloom` libra
 1. [Classes](#classes)
    - [BloomFilter](#bloomfilter)
 2. [Methods](#methods)
-   - [__init__(self, capacity: int, hash_functions: int) -> None](#initself-capacity-int-hash_functions-int)
+   - [__init__(self, capacity: int, hash_functions: int) -> None](#__init__self-capacity-int-hash_functions-int---none)
    - [__contains__(self, item: bytes) -> bool](#containsself-item-bytes-bool)
    - [add(self, item: bytes) -> None](#addself-item-bytes)
    - [number_of_items(self) -> int](#number_of_itemsself-int)
