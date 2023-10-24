@@ -7,16 +7,16 @@ This document provides detailed information about the API of the `PyBloom` libra
 1. [Classes](#classes)
    - [BloomFilter](#bloomfilter)
 2. [Methods](#methods)
-   - [`__init__(self, capacity: int, hash_functions: int) -> None`](#initself-capacity-int-hash_functions-int)
-   - [`__contains__(self, item: bytes) -> bool`](#containsself-item-bytes-bool)
-   - [`add(self, item: bytes) -> None`](#addself-item-bytes)
-   - [`number_of_items(self) -> int`](#number_of_itemsself-int)
-   - [`false_positive_rate(self) -> float`](#false_positive_rateself-float)
-   - [`union(self, bf2: 'BloomFilter') -> 'BloomFilter'`](#unionself-bf2-bloomfilter-bloomfilter)
-   - [`intersection(self, bf2: 'BloomFilter') -> 'BloomFilter'`](#intersectionself-bf2-bloomfilter-bloomfilter)
-   - [`gamma_deniability(self) -> float`](#gamma_deniabilityself)
-   - [`jaccard_index(self, bf2: "BloomFilter") -> float`](#jaccard_indexself-bf2-bloomfilter-bloomfilter)
-   - [`clear(self) -> None`](#clearself)
+   - [__init__(self, capacity: int, hash_functions: int) -> None](#initself-capacity-int-hash_functions-int)
+   - [__contains__(self, item: bytes) -> bool](#containsself-item-bytes-bool)
+   - [add(self, item: bytes) -> None](#addself-item-bytes)
+   - [number_of_items(self) -> int](#number_of_itemsself-int)
+   - [false_positive_rate(self) -> float](#false_positive_rateself-float)
+   - [union(self, bf2: 'BloomFilter') -> 'BloomFilter'](unionself-bf2-bloomfilter-bloomfilter)
+   - [intersection(self, bf2: 'BloomFilter') -> 'BloomFilter'](intersectionself-bf2-bloomfilter-bloomfilter)
+   - [gamma_deniability(self) -> float](#gamma_deniabilityself)
+   - [jaccard_index(self, bf2: "BloomFilter") -> float](#jaccard_indexself-bf2-bloomfilter-bloomfilter)
+   - [clear(self) -> None](#clearself)
 
 ---
 
@@ -62,7 +62,7 @@ class BloomFilter:
 
 ### `__init__(self, capacity: int, hash_functions: int) -> None`
 
-    Initializes a new BloomFilter with the specified capacity and number of hash_functions.
+    Initializes a new BloomFilter with the specified capacity and number of hash functions.
     
 ### `__contains__(self, item: bytes) -> bool`
 
