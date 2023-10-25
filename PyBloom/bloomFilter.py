@@ -61,6 +61,8 @@ class BloomFilter():
         Gives the estimate of the number of items inside the Bloom Filter.
         
 		Return: int number that represents the number of elements estimated.
+        
+        Reference: https://en.wikipedia.org/wiki/Bloom_filter#Approximating_the_number_of_items_in_a_Bloom_filter
         """
         
         if not self.flag_intersection:
@@ -77,6 +79,8 @@ class BloomFilter():
         Gives the false positive rate.
         
 		Return: float number in [0,1] that represents the false positive rate.
+        
+        Reference: https://en.wikipedia.org/wiki/Bloom_filter#Probability_of_false_positives
         """
         
         elements = self.number_of_items()
@@ -92,6 +96,8 @@ class BloomFilter():
         Performs the union between two Bloom Filters.
         
 		Return: New BloomFilter representing the union of the two input Bloom Filters.
+        
+        Reference: https://en.wikipedia.org/wiki/Bloom_filter#Interesting_properties
         """
         
         assert self.capacity == bf2.capacity
@@ -105,6 +111,8 @@ class BloomFilter():
         Performs the intersection between two Bloom Filters.
         
 		Return: New BloomFilter representing the intersection of the two input Bloom Filters.
+        
+        Reference: https://en.wikipedia.org/wiki/Bloom_filter#Interesting_properties
         """
         
         assert self.capacity == bf2.capacity
@@ -121,6 +129,8 @@ class BloomFilter():
         Gives the gamma value for Bloom Filter deniability.
 
 		Return: float number in [0,1] that represents the deniability.
+        
+        Reference: https://link.springer.com/chapter/10.1007/978-3-642-33627-0_27
         """
 
         k = self.hash_functions
@@ -135,6 +145,8 @@ class BloomFilter():
         Gives the value of Jaccard index between two Bloom Filters.
 
 		Return: float number in [0,1] that represents the Jaccard index.
+        
+        Reference: https://en.wikipedia.org/wiki/Jaccard_index#Overview
         """
         
         bf_int = self.intersection(bf2)
